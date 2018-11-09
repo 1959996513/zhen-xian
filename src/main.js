@@ -6,10 +6,12 @@ import router from './router'
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
-Vue.use(Vant)
 
-Vue.config.productionTip = false
 
+Vue.config.productionTip = true
+Vue.use(Vant,{
+
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
