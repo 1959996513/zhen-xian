@@ -5,7 +5,7 @@
      <van-row type="flex" class="hander" justify="space-around"   align='center'>
        <van-col span="6" style='padding-left: 30px'>
          <a href="">
-           <span style=" color: #999999;font-size: 24px;">郑州</span>
+           <span style=" color: #222222;font-size: 24px;">郑州</span>
            <img src="../img/xiala.png" alt="" style="width: 18px; height: 9px;">
          </a>
        </van-col>
@@ -14,7 +14,7 @@
            <van-field
              label="搜索商品"
              left-icon="find"
-             span="6" style="display: flex;align-items: center; width:420px;height: 52px; border: 1px solid #222222;border-radius: 15px;padding-left: 80px;font-size: 20px;color: #999999;"
+             span="6" style="display: flex;align-items: center; width:420px;height: 52px; border: 1px solid #222222;border-radius: 25px;padding-left: 80px;font-size: 22px;color: #999999;"
 
            />
 
@@ -153,7 +153,7 @@
      </van-row>
      <!--尾部-->
      <van-tabbar style="height:98px;margin-top:30px;z-index: 9;">
-       <van-tabbar-item style="text-align:left;padding-left: 72px;">
+       <van-tabbar-item style="text-align:left;  width: 188px;">
 
          <img class="image" src="../img/首页点击时@2x.png"  />
          <p class="p">首页</p>
@@ -161,7 +161,7 @@
 
        <!--2-->
 
-       <van-tabbar-item >
+       <van-tabbar-item to='/find'  style="  width: 188px;" >
 
          <img class="image" src="../img/发现未点击时@2x.png"
          >
@@ -170,7 +170,7 @@
 
        <!--3-->
 
-       <van-tabbar-item >
+       <van-tabbar-item style="  width: 188px;" to="/shop">
 
          <img class="image"
               src="../img/购物车未点击时@2x.png"
@@ -179,7 +179,7 @@
        </van-tabbar-item>
        <!--4-->
 
-       <van-tabbar-item style="text-align:right;padding-right:72px;">
+       <van-tabbar-item style="text-align:right;  width: 188px;" to="/my">
 
          <img class="image" src="../img/我的未点击时@2x.png" />
          <p class="p">我的</p>
@@ -191,6 +191,7 @@
 </template>
 
 <script>
+
     export default {
         name: "Home"
     }

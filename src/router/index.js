@@ -11,6 +11,21 @@ const Home = resolve=>{
     resolve(require('pages/Home.vue'));
   })
 }
+const Shop = resolve=>{
+  require.ensure(['pages/Shop.vue'],()=>{
+    resolve(require('pages/Shop.vue'));
+  })
+}
+const My = resolve=>{
+  require.ensure(['pages/My.vue'],()=>{
+    resolve(require('pages/My.vue'));
+  })
+}
+const Find = resolve=>{
+  require.ensure(['pages/Find.vue'],()=>{
+    resolve(require('pages/Find.vue'));
+  })
+}
 
 Vue.use(Router)
 export default new Router({
@@ -18,6 +33,17 @@ export default new Router({
     {
       path:'/',
       component:Home
+    },{
+      path:'/find',
+      component:Find
+    },
+    {
+      path:'/shop',
+      component:Shop
+    },{
+    path:"/my",
+      component:My
     }
+
   ]
 })

@@ -10,8 +10,7 @@
 }
 .icon {
   /* 通过设置 font-size 来改变图标大小 */
-  width: 1em; height: 1em;
-  font-size: 20px;
+  font-size: 30px;
   /* 图标和文字相邻时，垂直对齐 */
   vertical-align: -0.15em;
   /* 通过设置 color 来改变 SVG 的颜色/fill */
@@ -20,3 +19,26 @@
      normalize.css 中也包含这行 */
   overflow: hidden;
 }
+body{
+  /deep/ .van-tabbar-item{
+    padding: 0;
+    width: 188px;
+    justify-content: space-between;
+  }
+  /deep/ .van-tab{
+    color: #666666;
+    font-size: 32px;
+  }
+  /deep/ .van-ellipsis{
+    margin-bottom: 26px;
+  }
+   /deep/ .van-tab--active{
+    color: #459027;
+    font-size: 32px;
+  }
+  /deep/ .van-hairline--top-bottom{
+    border-bottom: 2px solid #f2f2f2;
+  }
+}
+
+
