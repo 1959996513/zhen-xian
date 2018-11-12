@@ -40,7 +40,7 @@
        </van-col>
        <van-col span="6" style="margin:0px  170px;">
          <img src="../img/拼团图标@2x.png" alt="">
-         <div>分类</div>
+         <div>拼团</div>
        </van-col>
        <van-col span="6" style="padding-right:85px;">
          <img src="../img/特惠专区图标@2x.png" alt="">
