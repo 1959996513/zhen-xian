@@ -33,20 +33,11 @@
        <van-swipe-item><img src="../img/baaner@2x.png" alt=""></van-swipe-item>
      </van-swipe>
 
-     <van-row type="flex"style="text-align: center;padding-top: 50px; margin-bottom: 50px;">
-       <van-col span="6" style="padding-left: 85px;">
-         <img src="../img/分类图标@2x.png" alt="" style="width: 80px;height: 80px;">
-         <div>分类</div>
-       </van-col>
-       <van-col span="6" style="margin:0px  170px;">
-         <img src="../img/拼团图标@2x.png" alt="">
-         <div>拼团</div>
-       </van-col>
-       <van-col span="6" style="padding-right:85px;">
-         <img src="../img/特惠专区图标@2x.png" alt="">
-         <div>分类</div>
-       </van-col>
-     </van-row>
+     <div style="display: flex;justify-content: space-around;">
+         <router-link v-for='lists of list' :key="lists.tet" :to='lists.path'>
+           <Main :m='lists'></Main>
+         </router-link>
+     </div>
      <div style="width: 750px;height: 20px;background-color: #f2f2f2;margin-bottom: 40px"></div>
      <!--新品推荐-->
      <van-row type="flex" justify="center">
@@ -191,9 +182,21 @@
 </template>
 
 <script>
-
+  import Main from '@/components/Main'
     export default {
-        name: "Home"
+      name: "Home",
+      components:{
+          Main
+      },
+      data(){
+          return{
+            list:[
+              {sr:'img/分类图标@2x.png',tet:'分类',path:"/fenlei"},
+              {sr:'img/拼团图标@2x.png',tet:'拼团',path:"/cluster"},
+              {sr:'img/特惠专区图标@2x.png',tet:'特惠专区',path:"/tehui"},
+            ]
+          }
+      }
     }
 
 

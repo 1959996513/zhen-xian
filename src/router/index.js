@@ -16,6 +16,11 @@ const Shop = resolve=>{
     resolve(require('pages/Shop.vue'));
   })
 }
+const Cluster = resolve=>{
+  require.ensure(['pages/Cluster.vue'],()=>{
+    resolve(require('pages/Cluster.vue'));
+  })
+}
 const My = resolve=>{
   require.ensure(['pages/My.vue'],()=>{
     resolve(require('pages/My.vue'));
@@ -43,7 +48,12 @@ export default new Router({
     },{
     path:"/my",
       component:My
+    },
+    {
+      path:"/cluster",
+      component:Cluster
     }
+
 
   ]
 })
