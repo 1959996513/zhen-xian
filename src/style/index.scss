@@ -27,17 +27,31 @@ body{
   }
   /deep/ .van-tab{
     color: #666666;
+    //height: 100%;
+
     font-size: 32px;
-  }
-  /deep/ .van-ellipsis{
-    margin-bottom: 26px;
+    line-height: 70px;
+
   }
    /deep/ .van-tab--active{
     color: #459027;
     font-size: 32px;
+
+
   }
-  /deep/ .van-hairline--top-bottom{
-    border-bottom: 2px solid #f2f2f2;
+  /deep/ .van-tabs__wrap{
+
+  }
+ /deep/ .van-hairline--top-bottom::after{
+   border: 0;
+ }
+  /deep/ .van-tabs__line{
+    background-color: #44bb00;
+  bottom: -5px;
+  }
+  /deep/.van-tabs__wrap{
+     padding-bottom: 26px;
+    position: fixed;
   }
 
 }
